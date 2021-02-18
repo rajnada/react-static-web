@@ -1,0 +1,105 @@
+.category-container{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+        
+    h1{
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    .gallary-img{
+        position: relative;
+            
+            .btn {
+                position: absolute;
+                top: 48%;
+                left: 28%;
+            
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                background-color: #B28564;
+                color: white;
+                font-size: 16px;
+                padding: 12px 24px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                text-align: center;
+            }
+            .btn2{
+                
+                    position: absolute;
+                    top: 48%;
+                    right: 7%;
+                
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    background-color: #B28564;
+                    color: white;
+                    font-size: 16px;
+                    padding: 12px 24px;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    text-align: center;
+                
+            }
+            .btn3{
+                
+                position: absolute;
+                top: 93%;
+                left: 15%;
+            
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                background-color: #B28564;
+                color: white;
+                font-size: 16px;
+                padding: 12px 24px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                text-align: center;
+            
+            }
+
+            .btn4{
+                
+            position: absolute;
+            top: 93%;
+            left: 44%;
+        
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #B28564;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        
+            }
+            .btn5{
+                
+        position: absolute;
+        top: 93%;
+        right: 10%;
+
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #B28564;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    
+            }
+    }
+  
+}
