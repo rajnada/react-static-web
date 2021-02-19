@@ -36,7 +36,7 @@ const Header = () => {
           </div>
           <div className="header-searchbar">
             <InputGroup className="input-searchgroup">
-              <InputGroup.Prepend>
+              <InputGroup.Prepend className="input-search-text">
                 <InputGroup.Text id="basic-addon3">
                   Select a category
                 </InputGroup.Text>
@@ -45,7 +45,7 @@ const Header = () => {
                 id="basic-url"
                 placeholder="Search Your Products..."
                 aria-describedby="basic-addon3"
-                style={{ height: "53px" }}
+                className="form-control"
               ></FormControl>
               <Button className="searchbtn">
                 <img src={searchIcon} alt="search-btn" />
@@ -84,7 +84,7 @@ export const Menu = () => {
         <Navbar
           collapseOnSelect
           expand="lg"
-          style={{ background: "#382D24" }}
+          className="navbar-header"
           variant="dark"
         >
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
