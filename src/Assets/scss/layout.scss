@@ -1,362 +1,351 @@
-.header-container{
-    .header-body{
-        position: relative;
-        display: flex;
-        margin-top: 90px;
-      .header-logo{
-        display: flex;
-        margin-top: 0;
-        margin-left: 30px;
+.header-container {
+  .header-body {
+    position: relative;
+    display: flex;
+    margin-top: 90px;
+    .header-logo {
+      display: flex;
+      margin-top: 0;
+      margin-left: 30px;
+      height: 50px;
+
+      @media only screen and (max-width: 768px) {
+        height: 35px;
+        margin-left: 20px;
+
+        @media only screen and (max-width: 540px) and (min-width: 320px) {
+          height: 25px;
+          margin-left: 20px;
+        }
+      }
+
+      @media only screen and (max-width: 1024px) and (min-width: 769px) {
+        height: 40px;
+        margin-left: 20px;
+      }
+      @media only screen and (min-width: 1920px) {
         height: 50px;
-    
+        margin-left: 40px;
+      }
+
+      h3 {
+        line-height: 50px;
+        margin-left: 12px;
+
         @media only screen and (max-width: 768px) {
-            height: 35px;
-            margin-left: 20px;
+          line-height: 33px;
+          margin-left: 6px;
+          font-size: 20px;
 
-            @media only screen and (max-width: 540px) and (min-width: 320px) {
-                height: 25px;
-                margin-left: 20px;
-                }
-            }
-
-            @media only screen and (max-width: 1024px) and (min-width: 769px) {
-                height: 40px;
-                margin-left: 20px;
-                }
-            @media only screen and (min-width: 1920px) {
-                height: 50px;
-                margin-left: 40px;
-                }
-    
-        h3{
-            line-height: 50px;
-            margin-left: 12px;
-
-            @media only screen and (max-width: 768px) {
-                line-height: 33px;
-                margin-left: 6px;
-                font-size: 20px;
-
-                @media only screen and (max-width: 540px) and (min-width: 320px) {
-                    line-height: 25px;
-                    margin-left: 6px;
-                    font-size: 15px;
-                    }
-                }
-
-                @media only screen and (max-width: 1024px) and (min-width: 769px) {
-                    line-height: 36px;
-                    margin-left: 6px;
-                    font-size: 20px;
-                    }
-
-                    @media only screen and (min-width: 1920px) {
-                        line-height: 45px;
-                        margin-left: 15px;
-                        font-size: 30px;
-                        }
-             }
+          @media only screen and (max-width: 540px) and (min-width: 320px) {
+            line-height: 25px;
+            margin-left: 6px;
+            font-size: 15px;
+          }
         }
-      
-      .header-searchbar{
-          position: absolute;
-          left: 260px;
-          line-height: 45px;
-          width: 600px;
-        @media only screen and (max-width: 768px) {
-           left: 160px;
-            width: 250px;
-        }
-        @media screen and (min-width: 540px) and (max-width: 540px) {
-            left: 282px;
-        }
-        @media(max-width:375px){
-            width: 209px;
-        }
-            @media only screen and (max-width: 360px) {
-                width: 195px;
-
-                @media only screen and (max-width: 320px) {
-                    width: 155px;
-                }
-            }
 
         @media only screen and (max-width: 1024px) and (min-width: 769px) {
-            position: absolute;
-            width: 390px;
-            left: 160px;
-            }
+          line-height: 36px;
+          margin-left: 6px;
+          font-size: 20px;
+        }
 
         @media only screen and (min-width: 1920px) {
-             position: relative;
-            }
-
-        .input-search-text{
-            width: 130px;
-            line-height: 45px;
-            #basic-addon3{
-                font-size: 14px;
-                padding: 12px;
-            }
-
-        @media only screen and (max-width: 768px) {
-            height: 35px;
-            width: 70px;
-
-            #basic-addon3{
-                font-size: 9px;
-                margin-left: -22px;
-            }
+          line-height: 45px;
+          margin-left: 15px;
+          font-size: 30px;
         }
-        @media only screen and (max-width: 540px) and (min-width: 320px) {
-            width: 55px;
-            height: 26px;
-                #basic-addon3{
-                    font-size: 8px;
-                    padding-left: 8px;
-                }
-            }
-            @media only screen and (max-width: 1024px) and (min-width: 769px) {
-                height: 40px;
-                width: 90px;
-    
-                    #basic-addon3{
-                        font-size: 10px;
-                        padding-left: 5px;
-                    }
-                }
-
-                @media only screen and (min-width: 1920px) {
-                    height: 50px;
-                    width: 138px;
-        
-                        #basic-addon3{
-                            font-size: 16px;
-                            padding-left: 7px;
-                        }
-                    }
-        }
-        .form-control{
-            height: 50px;
-            font-size: 14px;
-            @media only screen and (max-width: 768px) {
-                height: 35px;
-                font-size: 12px;
-                @media only screen and (max-width: 540px) and (min-width: 320px) {
-                    height: 26px;
-                    font-size: 7px;
-                }
-            }
-            @media only screen and (max-width: 1024px) and (min-width: 769px) {
-                height: 40px;
-                font-size: 10px;
-            }
-            @media only screen and (min-width: 1920px) {
-                height: 50px;
-                font-size: 16px;
-            }
-        }
-        .searchbtn{
-            background: white;
-            border-top-right-radius: 23px;
-            border-bottom-right-radius: 23px;
-            @media only screen and (max-width: 768px) {
-                height: 35px;
-                width: 20px;
-                img{
-                    height: 15px;
-                    margin-left: -8px;
-                    margin-bottom: 5px;
-                }
-
-                @media only screen and (max-width: 540px) and (min-width: 320px) {
-                    height: 26px;
-                    width: 10px;
-                    img{
-                        height: 10px;
-                        padding-left: 3px;
-                        margin-bottom: 14px;
-                    }
-                }
-            }
-
-            @media only screen and (min-width: 1920px){
-                height: 50px;
-                width: 30px;
-                img{
-                    height: 15px;
-                    margin-left: -6px;
-                    margin-bottom:1px;
-                }
-            }
-        }
-      }
-      
-      .account-sec{
-        position: absolute;
-        right: 40px;
-    
-          @media(min-width:1920px){
-            position: absolute;
-            right: 40px;
-          }
-          @media(max-width:1024px){
-            position: absolute;
-            right: 10px;
-          }
-          @media(max-width:768px){
-              right: 5px;
-          }
-          @media(max-width:540px){
-                right: 35px;
-            
-          }
-        
-          button{
-            background: none;
-            border: none; 
-            
-                @media only screen and (max-width: 540px) and (min-width: 320px) {
-                    position: relative;
-                    margin-left:38px;  
-                  } 
-                @media only screen and (max-width: 360px) {
-                    position: relative;
-                    margin-left:38px;  
-                  } 
-
-              @media only screen and (max-width: 1024px) and (min-width: 769px) { 
-                position: relative;
-                right: 0px;
-              } 
-
-             
-
-            .header-icons{
-                height: 48px;
-                width: 48px;
-                 
-                @media only screen and (max-width: 768px) {
-                    height: 35px;
-                    width: 35px;  
-                    
-                    @media only screen and (max-width: 540px) and (min-width: 320px) {
-                        position: absolute;  
-                        display: flex;
-                        height: 15px;
-                        width: 15px;                   
-                    }
-                    
-                    @media only screen and (max-width: 360px) {
-                        position: absolute;  
-                        display: flex;
-                        height: 15px;
-                        width: 15px;                   
-                    }
-                }
-
-                @media only screen and (max-width: 1024px) and (min-width: 769px) {
-                   
-                    height: 40px;
-                    width: 40px;                   
-                }
-
-                @media only screen and (min-width: 1920px){
-                   
-                    height: 60px;
-                    width: 60px;                   
-                }
-            }
-            label{
-                    
-                margin-left: 7px;
-             
-
-            @media only screen and (max-width: 1024px) and (min-width: 769px) {
-                    font-size: 13px; 
-            }
-
-            @media only screen and (min-width: 1920px) {
-                    font-size: 18px; 
-                    margin-left: 10px;
-            }
-
-            @media only screen and (max-width: 768px) {
-                    font-size: 12px;
-                    margin-left: 3px;
-
-                @media only screen and (max-width: 540px) and (min-width: 320px) {
-                        position: absolute;
-                        font-size: 8px;
-                        margin-left: 17px;
-                        line-height: 9px;
-                }
-
-                @media only screen and (max-width: 360px) {
-                        position: absolute;
-                        font-size: 8px;
-                        margin-left: 17px;
-                        line-height: 9px;
-                }
-            }
-            }
-         }
       }
     }
+
+    .header-searchbar {
+      position: absolute;
+      left: 260px;
+      line-height: 45px;
+      width: 600px;
+      @media only screen and (max-width: 768px) {
+        left: 160px;
+        width: 250px;
+      }
+      @media screen and (min-width: 540px) and (max-width: 540px) {
+        left: 282px;
+      }
+      @media (max-width: 375px) {
+        width: 209px;
+      }
+      @media only screen and (max-width: 360px) {
+        width: 195px;
+
+        @media only screen and (max-width: 320px) {
+          width: 155px;
+        }
+      }
+
+      @media only screen and (max-width: 1024px) and (min-width: 769px) {
+        position: absolute;
+        width: 390px;
+        left: 160px;
+      }
+
+      @media only screen and (min-width: 1920px) {
+        position: relative;
+      }
+
+      .input-search-text {
+        width: 130px;
+        line-height: 45px;
+        #basic-addon3 {
+          font-size: 14px;
+          padding: 12px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          height: 35px;
+          width: 70px;
+
+          #basic-addon3 {
+            font-size: 9px;
+            margin-left: -22px;
+          }
+        }
+        @media only screen and (max-width: 540px) and (min-width: 320px) {
+          width: 55px;
+          height: 26px;
+          #basic-addon3 {
+            font-size: 8px;
+            padding-left: 8px;
+          }
+        }
+        @media only screen and (max-width: 1024px) and (min-width: 769px) {
+          height: 40px;
+          width: 90px;
+
+          #basic-addon3 {
+            font-size: 10px;
+            padding-left: 5px;
+          }
+        }
+
+        @media only screen and (min-width: 1920px) {
+          height: 50px;
+          width: 138px;
+
+          #basic-addon3 {
+            font-size: 16px;
+            padding-left: 7px;
+          }
+        }
+      }
+      .form-control {
+        height: 50px;
+        font-size: 14px;
+        @media only screen and (max-width: 768px) {
+          height: 35px;
+          font-size: 12px;
+          @media only screen and (max-width: 540px) and (min-width: 320px) {
+            height: 26px;
+            font-size: 7px;
+          }
+        }
+        @media only screen and (max-width: 1024px) and (min-width: 769px) {
+          height: 40px;
+          font-size: 10px;
+        }
+        @media only screen and (min-width: 1920px) {
+          height: 50px;
+          font-size: 16px;
+        }
+      }
+      .searchbtn {
+        background: white;
+        border-top-right-radius: 23px;
+        border-bottom-right-radius: 23px;
+        @media only screen and (max-width: 768px) {
+          height: 35px;
+          width: 20px;
+          img {
+            height: 15px;
+            margin-left: -8px;
+            margin-bottom: 5px;
+          }
+
+          @media only screen and (max-width: 540px) and (min-width: 320px) {
+            height: 26px;
+            width: 10px;
+            img {
+              height: 10px;
+              padding-left: 3px;
+              margin-bottom: 14px;
+            }
+          }
+        }
+
+        @media only screen and (min-width: 1920px) {
+          height: 50px;
+          width: 30px;
+          img {
+            height: 15px;
+            margin-left: -6px;
+            margin-bottom: 1px;
+          }
+        }
+      }
+    }
+
+    .account-sec {
+      position: absolute;
+      right: 40px;
+
+      @media (min-width: 1920px) {
+        position: absolute;
+        right: 40px;
+      }
+      @media (max-width: 1024px) {
+        position: absolute;
+        right: 10px;
+      }
+      @media (max-width: 768px) {
+        right: 5px;
+      }
+      @media (max-width: 540px) {
+        right: 35px;
+      }
+
+      button {
+        background: none;
+        border: none;
+
+        @media only screen and (max-width: 540px) and (min-width: 320px) {
+          position: relative;
+          margin-left: 38px;
+        }
+        @media only screen and (max-width: 360px) {
+          position: relative;
+          margin-left: 38px;
+        }
+
+        @media only screen and (max-width: 1024px) and (min-width: 769px) {
+          position: relative;
+          right: 0px;
+        }
+
+        .header-icons {
+          height: 48px;
+          width: 48px;
+
+          @media only screen and (max-width: 768px) {
+            height: 35px;
+            width: 35px;
+
+            @media only screen and (max-width: 540px) and (min-width: 320px) {
+              position: absolute;
+              display: flex;
+              height: 15px;
+              width: 15px;
+            }
+
+            @media only screen and (max-width: 360px) {
+              position: absolute;
+              display: flex;
+              height: 15px;
+              width: 15px;
+            }
+          }
+
+          @media only screen and (max-width: 1024px) and (min-width: 769px) {
+            height: 40px;
+            width: 40px;
+          }
+
+          @media only screen and (min-width: 1920px) {
+            height: 60px;
+            width: 60px;
+          }
+        }
+        label {
+          margin-left: 7px;
+
+          @media only screen and (max-width: 1024px) and (min-width: 769px) {
+            font-size: 13px;
+          }
+
+          @media only screen and (min-width: 1920px) {
+            font-size: 18px;
+            margin-left: 10px;
+          }
+
+          @media only screen and (max-width: 768px) {
+            font-size: 12px;
+            margin-left: 3px;
+
+            @media only screen and (max-width: 540px) and (min-width: 320px) {
+              position: absolute;
+              font-size: 8px;
+              margin-left: 17px;
+              line-height: 9px;
+            }
+
+            @media only screen and (max-width: 360px) {
+              position: absolute;
+              font-size: 8px;
+              margin-left: 17px;
+              line-height: 9px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 360px) {
-    .account-sec{
-        position: absolute;
-        margin-top: 20px;
-        right: 40px;
-    }  
+  .account-sec {
+    position: absolute;
+    margin-top: 20px;
+    right: 40px;
+  }
 }
 @media only screen and (max-width: 375px) {
-    .account-sec{
-        position: absolute;
-        margin-top: 20px;
-        right: 40px;
-    }    
+  .account-sec {
+    position: absolute;
+    margin-top: 20px;
+    right: 40px;
+  }
 }
 
 @media only screen and (max-width: 540px) {
-    .account-sec{
-        position: absolute;
-        margin-top: 20px;
-        right: 40px;
-    }    
+  .account-sec {
+    position: absolute;
+    margin-top: 20px;
+    right: 40px;
+  }
 }
-   
-
-    
-      
 
 /***************Menu-Navbar********************/
 
-.navbar-container{
-    margin-top: 45px;
-    .navbar-header{
-        background:#382D24 ;
-    }
-    .menu-navbar{
-        display: flex;
-        a{
-            margin-left: 17px;
-            background-color: transparent;
-            color: black;
+.navbar-container {
+  margin-top: 45px;
+  .navbar-header {
+    background: #382d24;
+  }
+  .menu-navbar {
+    display: flex;
+    a {
+      margin-left: 17px;
+      background-color: transparent;
+      color: black;
 
-            @media(max-width:1240px){
-                font-size: 15px;
-            }
-            @media(max-width:1024px){
-                font-size: 11px;
-                max-width: 140px;
-            }
+      @media (max-width: 1240px) {
+        font-size: 15px;
+      }
+      @media (max-width: 1024px) {
+        font-size: 11px;
+        max-width: 140px;
+      }
 
-            img{
-                margin-right: 20px;
-            }
-        }
+      img {
+        margin-right: 20px;
+      }
     }
+  }
 }
